@@ -1,0 +1,41 @@
+<script props>
+    module.exports = {
+        date: props.date,
+        title: props.title,
+        image: props.image,
+        excerpt: props.excerpt,
+        link: props.link,
+    }
+</script>
+<tr>
+    <td class="w-full px-6 sm:px-0 text-left">
+        <table class="w-full">
+            <tr>
+                <td>
+                    <table class="w-full">
+                        <tr>
+                            <td class="p-6 border-white border-2 border-solid rounded shadow-sm">
+                                <p class="m-0 mb-1 text-sm text-astroorange">
+                                    {{date}}
+                                </p>
+
+                                <h2 class="m-0 mb-9 text-astrowhite text-2xl leading-6">
+                                    {{title}}
+                                </h2>
+
+                                <img src="{{image}}">
+                                <p class="text-justify my-5 text-base text-astrowhite">
+                                    {{excerpt}}
+                                </p>
+                                <a href="{{link}}"
+                                    class="text-base text-astroorange hover:opacity-80 [text-decoration:none]">
+                                    Czytaj dalej &rarr;
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
