@@ -1,4 +1,15 @@
+<!--
+    title - tytuł artykułu
+    date - data publikacji, wpisujemy taką, jaka wyświetla się na Astronecie, przykład: 26 grudnia 2023
+    image - obrazek, wyróżniający (preferowany) lub nagłówkowy taki, jaki pasuje, link do obrazka kopiujemy wyłącznie bezpośrenio z Astronetu lub źródła, 
+    link musi kończyć się rozszerzeniem informującym o formacie obrazka, czyli .png, .jpg, .webp etc.
+    excerpt - fragment, jeżeli artykuł na zajawkę wpisujemy zajawkę, jeśli nie - kopiujemy tekst z początku artykułu. Fragmenty umieszczonych obok siebie dwóch 
+    małych artykułów powinny mieć podobną długość, jeżeli fragment nie kończy się kropką, używamy na końcu wielokropka
+    link - link do artykułu z Astronetu
+    uwaga: linki kopiujemy bez części znajdującej się po znaku '?' są to dodatkowe informacje, np. sekcja na stronie
+-->
 <extends src="src/layouts/astrolayout.html">
+    <!--Główny artykuł, ten największy, który wyświetla się na początku-->
     <block name="main-article">
         <x-main-article 
         title="Całodobowy zegar słoneczny w Krakowie" 
@@ -8,6 +19,7 @@
         link="https://astronet.pl/wydarzenia/calodobowy-zegar-sloneczny-w-krakowie/">
        </x-main-article>
     </block>
+    <!--Pierwszy szeroki artykuł-->
     <block name="first-large-article">
         <x-large-article 
         title="W kosmosie nigdy nie będziemy sami. Grzyby" 
@@ -17,6 +29,7 @@
         link="https://astronet.pl/autorskie/w-kosmosie-nigdy-nie-bedziemy-sami-grzyby">
        </x-large-article>
     </block>
+    <!--Pierwsze dwa małe artykuły-->
     <block name="first-two-small-articles">
         <x-small-article
         title="Packing for Mars – recenzja książki"
@@ -33,6 +46,7 @@
         excerpt="Dotychczas naukowcy wykluczali możliwość istnienia życia na Merkurym – nie bez powodu. Ta planeta to jałowe pustkowie, na którym brakuje większości składników, niezbędnych dla życia jakie znamy">
         </x-small-article>
     </block>
+    <!--Drugi szeroki artykuł-->
     <block name="second-large-article">
         <x-large-article
         title="Misje Kosmiczne XX wieku: Misje Kosmos"
@@ -42,6 +56,7 @@
         link="https://astronet.pl/loty-kosmiczne/misje-xx-wieku/misje-kosmiczne-xx-wieku-misje-kosmos/"
         ></x-large-article>
     </block>
+    <!--Drugie dwa małe artykuły-->
     <block name="second-two-small-articles">
         <x-small-article
         title="Katalog Caldwella: 73"
@@ -57,6 +72,5 @@
         link="https://astronet.pl/wszechswiat/katalog-caldwella/katalog-caldwella-c74/"
         excerpt="Caldwell 74, znany również jako Pierścień Południowy lub Mgławica Ośmiu Błysków, to mgławica planetarna znajdująca się około 2000 lat świetlnych od nas.">
         </x-small-article>
-
     </block>
 </extends>
